@@ -1,7 +1,7 @@
 import Button from "./Button";
 const StartingPage = ({onClick}) => {
   return (
-    <div className="w-[1182px] flex justify-between items-center bg-green-400">
+    <div className="w-[1182px] flex justify-between items-center">
         <div>
         <img src="images/dices 1.png" alt="" />
         </div>

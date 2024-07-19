@@ -3,7 +3,7 @@ import GamePlay from "./components/GamePlay";
 import { useState } from "react";
 
 function App() {
-  const [startGame, setStartGame] = useState(false);
+  const [startGame, setStartGame] = useState(true);
 
   const handlePlay = () => {
     setStartGame(prevState => !prevState);
