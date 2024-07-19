@@ -19,7 +19,7 @@ const GamePlay = () => {
             setRandVal(getRandomVal(1, 7));
             setError(false);
             if(selectedVal === randVal){
-                setScore(prevScore => prevScore += randVal)
+                setScore(prevScore => prevScore + randVal)
             }else{
                 setScore(prevScore => prevScore - 2)
                 }
@@ -44,7 +44,7 @@ const GamePlay = () => {
                     {error && <p className="text-red-700">Please Select a number</p>}
                     <div className="flex gap-[24px]">
                         {btns.map((btn, i) => 
-                        <button className={`h-[72px] w-[72px] border-2 border-black flex justify-center items-center ${selectedVal === btn ? "bg-black text-white" : "" }`} value={btn} onClick={clickBtn}
+                        <button className={`h-[72px] w-[72px] border-2 border-black flex justify-center items-center`} value={btn} onClick={clickBtn}
                         key={i}>{btn}</button>)}
                     </div>
                     <p className="font-semibold">Select Number</p>
